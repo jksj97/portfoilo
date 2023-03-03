@@ -1,0 +1,36 @@
+@media (min-width: 1921px) {
+
+    .body{padding: 0 20rem;}
+
+    .hello_top > h1.hello_01{
+        left: -1.8rem;
+        padding: 2rem 0 4rem 0;
+    }
+
+    /* design system part 02 */
+    .design_sys_02{padding: 0%;}
+    .design_sys_02 .sys-title{padding-bottom: 1%;}
+    .design_sys_02 .sys-title,
+    .design_sys_02 .content_group02 .mobile_sys,
+    .design_sys_02 .content_group02 .web_sys{padding-left: 2%;}
+    .design_sys_02 .content_group02 article {
+        width: 100%; 
+        border: 2px solid #555555;
+        border-radius: 12px;  
+        padding: 2rem 0;
+        margin-bottom: 3rem;
+    }
+    .design_sys_02 .content_group02 article img:nth-child(1){
+        position: relative; 
+        left: 23rem; 
+        scale: 100%;
+    }
+    .design_sys_02 .content_group02 article img:nth-child(2){
+        position: absolute; 
+        right: 20rem; 
+        scale: 100%;
+    }
+    
+    /* design system part 03 */
+    .design_sys_03, .design_sys_04{padding: 2rem;}
+}

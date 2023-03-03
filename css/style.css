@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+
+body{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: #151515;
+    font-size: 16px;
+}
+
+ul, a{text-decoration: none;}
+li{list-style: none;}
+img{background-size: cover;}
+
+/* font style */
+html, body, footer, .body, h1, h3, h4, a, p, td {font-family: 'Noto Sans KR', sans-serif; color: white;}
+h3, h4, a, p{margin: 0px;}
+h1, h3, h4 {font-weight: 700;}
+a, p, td {font-weight: 400;}
+h4, a, p, td {font-size: 1rem; line-height: 1.8rem;}
+h1{font-size: 6.3rem; margin: 0;}
+.border{color: #151515; -webkit-text-stroke: 1px white; margin: 1.4rem;}
+.white{font-size: 6.5rem; color: white;}
+button{border: none; background-color:#151515; cursor: pointer; margin: 2px 0;}
+
+/* header */
+header{
+    width: 100%;
+    height: 46px;
+    background-color: #555555;
+
+    position: fixed;
+    top: 0;
+    z-index: 102;
+    box-shadow: 0 4px 12px rgba(21, 21, 21, 0.4);
+}
+
+.head_inner{
+    margin: 0 auto;
+    width: 96%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head_inner a, .head_inner .mainMenu li a{font-size: 0.8rem !important;}
+.mainMenu li{float: left; margin-left: 1rem;}
+ 
+/* to top btn : 맨위로*/
+button.toTheTop{
+    z-index: 101;
+    width: 86px;
+    height: 86px;
+    border: 2px solid rgba(21, 21, 21, 0.5); 
+    border-radius: 50%;
+    background-color: rgba(21, 21, 21, 0.4);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+
+    /* position */
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
+
+/* hide-ex : 말풍선 공통*/
+.hide_ex{
+    position: relative;
+    background-color: #555555;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px rgba(21, 21, 21, 0.75);
+}
+
+
+
+/* 섹션 첫번째 */
+.sec01{margin: 100px 0 300px 0;}
+.set01_content{
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0 3rem 0;
+}
+.set01_content_le{
+    width: 66%; 
+    padding-left: 40px;
+    /* border: 1px solid white; */
+}
+.set01_content_ri{
+    width: 34%; 
+    text-align: left;
+    position: relative;
+    /* border: 1px solid white; */
+}
+.key_modalGroup{
+    /* position: absolute; */
+    width: 21rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* border: 1px solid red; */
+}
+.key_modalGroup:hover .modal{opacity: 1; box-shadow: 0 4px 4px rgba(21, 21, 21, 0.75);}
+.key_modalGroup .modal{
+    position: absolute;
+    left: 54%;
+    opacity: 0;
+    transition: all ease-out .5s;
+}
+.key_modalGroup .modal p {padding: 5px 1rem;}
+.key_modalGroup .modal::before{
+    content: "";
+    position: absolute;
+    left: -19px;
+    top: 50%;
+    margin-top: -5px;
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #555555;
+    transition: all ease-in 1s;
+}
+
+/* 섹션 첫번째 : 직관/그룹/클린/사용 hover active */
+
+
+/* 섹션 두번째 */
+.sec02{width: 100%; margin-bottom: 310px; overflow: hidden; position: relative;}
+
+.hello_top > h1.hello_01{
+    position: relative;
+    left: -1.2rem;
+    padding: 2rem 0 4rem 0;
+}
+
+.right_jiin_btn{position: absolute; bottom: 200px; right: 0;}
+.right_jiin_btn img{position: relative; cursor: pointer;}
+.right_jiin_btn img:hover{
+    /* animation */
+    animation: mymove 3s infinite ease-in-out;
+}
+@keyframes mymove {
+    0% {scale: 100%; top: 0; left: 30px;}
+    25% {scale: 98%; top: 20px; left: 30px;}
+    50% {scale: 95%; top: 28px; right: 25px;}
+    75% {scale: 98%; top: 20px; left: 30px;}
+    100% {scale: 100%; top: 0; left: 0;}
+}
+
+.boxhide{display: none; position: absolute; top: 30%; left: -240%; transition: 0.5s;}
+.boxhide p{padding: 1% 10px; display: inline-block; transition: 0.5s;}
+.boxhide::after{
+    content: "";
+    position: absolute;
+    right: -19px;
+    top: 50%;
+    margin-top: -7px;
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #555555;
+    border-right: 10px solid transparent;
+}
+
+
+/* hello_cont */
+.hello_cont{padding-left: 40px}
+
+/* skillTable_area */
+.skillTable_area{position: relative; left: -6px; margin-top: 16px;}
+.skill_contTop, .skill_contMid{border-spacing: 6px 0.2em;}
+.skill_contTop td,
+.skill_contMid td{border: 1px solid white; border-radius: 6px; padding: 10px 1rem;}
+
+
+
+/* 섹션 세번째 */
+/* 섹션 세번째 : 디자인 시스템 1번 */
+.design_sys_01 > p{padding-left: 2%}
+
+.design_sys_01 .main_sys_keyword{
+    border: 2px solid #555555; 
+    border-radius: 12px; 
+    margin: 1.2rem auto; 
+    text-align: center; 
+    padding: 15rem 8.5rem;
+}
+.design_sys_01 .main_sys_keyword img:nth-child(1){margin-right: 3rem;}
+
+/* 섹션 세번째 : 디자인 시스템 2번 */
+.design_sys_02{margin: 6rem 0 15rem 0; padding: 0 8.5rem;}
+.design_sys_02 .sys_title p{margin: 0px !important;}
+
+.design_sys_02 .content_group02 article{position: relative;}
+.design_sys_02 .content_group02 article img:nth-child(1){
+    position: relative; 
+    left: -1.8rem; 
+    scale: 98%;
+}
+.design_sys_02 .content_group02 article img:nth-child(2){
+    position: absolute; 
+    right: -2rem; 
+    scale: 98%;
+}
+
+.design_sys_02 .content_group02 .mobile_sys p{margin-bottom: 1rem;}
+
+/* 섹션 세번째 : 디자인 시스템 3번 */
+.design_sys_03, .design_sys_04{padding: 0 8.5rem;}
+.design_sys_03{margin-bottom: 15rem;}
+.design_sys_03 .gif_cont{text-align: center; padding: 8.5rem 0;}
+.design_sys_03 .gif_cont .btnsys_info{margin-top: 2.5rem;}
+.design_sys_03 .gif_cont .btnsys_info > h3{padding-bottom: 10px;}
+
+/* 섹션 세번째 : 디자인 시스템 4번 */
+.design_sys_04 .font_sys > .noto,
+.design_sys_04 .font_sys > .roboto{display: flex; align-items: end;}
+.design_sys_04 .font_sys > .noto{position: relative; left: -1.8rem; margin: 5rem 0;}
+.design_sys_04 .font_sys > .roboto{position: relative; right: 0; margin: 6.5rem 0;}
+
+.design_sys_04 .font_sys > .noto > .noto_info {margin-left: 2.5rem; margin-bottom: -1.4rem;}
+.design_sys_04 .font_sys > .roboto > .roboto_info {margin-right: 2.5rem; margin-bottom: -1rem;}
+
+footer{width: 100%; height: 15rem;}
