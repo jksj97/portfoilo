@@ -1,11 +1,27 @@
 @media (min-width: 1921px) {
 
-    .body{padding: 0 20rem;}
+    /* font */
+    h1{font-size: 10rem;}
+    h3, h4, a, p, td {font-size: 1.4rem; line-height: 2.5rem;}
+    .head_inner{width: 78%;}
+
+    .body{padding: 0 10rem;}
+
+    .head_inner a, .head_inner .mainMenu li a{font-size: 1rem !important;}
+
+    .set01_content{padding: 20rem 0 30rem 0;}
+    .set01_content_le p{top: -2.2rem; left: 5rem;}
+    .set01_content_ri{width: 26%;}
+    .key_modalGroup{width: 30rem;}
+    .key_modalGroup .modal{left: 58%;}
+    .key_modalGroup .modal p {padding: 10px 1.5rem;}
 
     .hello_top > h1.hello_01{
-        left: -1.8rem;
-        padding: 2rem 0 4rem 0;
+        left: -10rem;
+        padding: 2rem 0 12rem 0;
     }
+
+    .hello_top > img{scale: 120%; top: 2rem; left: 40%;}
 
     /* design system part 02 */
     .design_sys_02{padding: 0%;}
@@ -22,15 +38,21 @@
     }
     .design_sys_02 .content_group02 article img:nth-child(1){
         position: relative; 
-        left: 23rem; 
+        left: 16rem; 
         scale: 100%;
     }
     .design_sys_02 .content_group02 article img:nth-child(2){
         position: absolute; 
-        right: 20rem; 
+        right: 16rem; 
         scale: 100%;
     }
     
     /* design system part 03 */
     .design_sys_03, .design_sys_04{padding: 2rem;}
+
+    .font_sys > .noto .noto_info{top: 3rem; left: -35rem;}
+    .font_sys > .roboto > h1{left: -33rem;}
+    .font_sys > .roboto .roboto_info{top: 2.5rem; left: 10rem;}
+
+    footer{height: 20rem;}
 }
