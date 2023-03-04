@@ -7,7 +7,7 @@ body{
     border: 0;
     box-sizing: border-box;
     background-color: #151515;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 ul, a{text-decoration: none;}
@@ -20,7 +20,7 @@ h3, h4, a, p{margin: 0px;}
 h1, h3, h4 {font-weight: 700;}
 a, p, td {font-weight: 400;}
 h4, a, p, td {font-size: 1rem; line-height: 1.8rem;}
-h1{font-size: 6.3rem; margin: 0;}
+h1{font-size: 6.3rem; margin: 0rem !important;}
 .border{color: #151515; -webkit-text-stroke: 1px white; margin: 1.4rem;}
 .white{font-size: 6.5rem; color: white;}
 button{border: none; background-color:#151515; cursor: pointer; margin: 2px 0;}
@@ -79,7 +79,7 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
 
 
 /* 섹션 첫번째 */
-.sec01{margin: 100px 0 300px 0;}
+.sec01{margin: 150px 0 200px 0;}
 .set01_content{
     margin: 0 auto;
     /* border: 1px solid red; */
@@ -88,13 +88,15 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 0 3rem 0;
+    padding: 3rem 0 3rem 0;
 }
 .set01_content_le{
     width: 66%; 
     padding-left: 40px;
-    /* border: 1px solid white; */
+    display: flex;
+    align-items:end;
 }
+.set01_content_le > p{position: relative; top: -1.5rem; left: 1.5rem;}
 .set01_content_ri{
     width: 34%; 
     text-align: left;
@@ -132,16 +134,16 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
     transition: all ease-in 1s;
 }
 
-/* 섹션 첫번째 : 직관/그룹/클린/사용 hover active */
 
 
 /* 섹션 두번째 */
 .sec02{width: 100%; margin-bottom: 310px; overflow: hidden; position: relative;}
 
+.hello_top > img{position: relative; top: 4.6rem; left: 42%;}
 .hello_top > h1.hello_01{
-    position: relative;
-    left: -1.2rem;
-    padding: 2rem 0 4rem 0;
+    /* position: relative;
+    left: 0rem; */
+    padding: 2rem 0 8rem 0;
 }
 
 .right_jiin_btn{position: absolute; bottom: 200px; right: 0;}
@@ -200,7 +202,7 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
 .design_sys_01 .main_sys_keyword img:nth-child(1){margin-right: 3rem;}
 
 /* 섹션 세번째 : 디자인 시스템 2번 */
-.design_sys_02{margin: 6rem 0 15rem 0; padding: 0 8.5rem;}
+.design_sys_02{margin: 6rem 0 10rem 0; padding: 0 8.5rem;}
 .design_sys_02 .sys_title p{margin: 0px !important;}
 
 .design_sys_02 .content_group02 article{position: relative;}
@@ -219,18 +221,57 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
 
 /* 섹션 세번째 : 디자인 시스템 3번 */
 .design_sys_03, .design_sys_04{padding: 0 8.5rem;}
-.design_sys_03{margin-bottom: 15rem;}
-.design_sys_03 .gif_cont{text-align: center; padding: 8.5rem 0;}
+.design_sys_03{margin-bottom: 10rem;}
+.design_sys_03 .gif_cont{text-align: center; padding: 8rem 0 2rem 0;}
 .design_sys_03 .gif_cont .btnsys_info{margin-top: 2.5rem;}
 .design_sys_03 .gif_cont .btnsys_info > h3{padding-bottom: 10px;}
 
 /* 섹션 세번째 : 디자인 시스템 4번 */
-.design_sys_04 .font_sys > .noto,
-.design_sys_04 .font_sys > .roboto{display: flex; align-items: end;}
-.design_sys_04 .font_sys > .noto{position: relative; left: -1.8rem; margin: 5rem 0;}
-.design_sys_04 .font_sys > .roboto{position: relative; right: 0; margin: 6.5rem 0;}
+.design_sys_04{padding: 0 0 5rem 8.5rem;}
+.sys_title{padding: 4rem 0 0rem 0;}
 
-.design_sys_04 .font_sys > .noto > .noto_info {margin-left: 2.5rem; margin-bottom: -1.4rem;}
-.design_sys_04 .font_sys > .roboto > .roboto_info {margin-right: 2.5rem; margin-bottom: -1rem;}
+.font_sys{padding: 2rem 6rem 0rem 0rem;}
+.font_sys > .noto, 
+.font_sys > .roboto {
+    display: flex; 
+    align-items:start; 
+    justify-content: space-between; 
+    padding: 6rem 0;
+}
 
-footer{width: 100%; height: 15rem;}
+.font_sys > .noto > h1,
+.font_sys > .roboto > h1{
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all ease-in .3s;
+}
+.font_sys > .noto > h1.active,
+.font_sys > .roboto > h1.active{transform: translateY(50%); opacity: 1;}
+
+.font_sys > .noto .noto_info,
+.font_sys > .roboto .roboto_info{
+    transform: translateX(-2%);
+    opacity: 0;
+    transition: all ease-in .3s;
+}
+.font_sys > .noto .noto_info.active,
+.font_sys > .roboto .roboto_info.active{transform: translateX(2%); opacity: 1;}
+.font_sys > .noto .noto_info{position: relative; top: 1.8rem; left: -7.5rem;}
+.font_sys > .noto .noto_info > p::after{
+    content: "";
+    width: 5rem;
+    height: 30px;
+    position: relative;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid #555555;
+}
+.font_sys > .roboto > h1{
+    position: relative; 
+    top: 0; 
+    left: -8rem;
+}
+.font_sys > .roboto .roboto_info{position: relative; top: 1.3rem; left: 4.5rem;}
+
+/* footer */
+footer{width: 100%; height: 10rem;}
