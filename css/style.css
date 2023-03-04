@@ -39,13 +39,13 @@ header{
 
 .head_inner{
     margin: 0 auto;
-    width: 96%;
+    width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
 }
-.mainMenu li{float: left; margin-left: 1rem;}
+.mainMenu li{float: right; margin-left: 1rem;}
 .head_inner a, .head_inner .mainMenu li a{
     position: relative !important;
     display: block;
