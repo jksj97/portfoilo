@@ -77,19 +77,25 @@ header{
 /* to top btn : 맨위로*/
 button.toTheTop{
     z-index: 101;
-    width: 8rem;
-    height: 8rem;
-    border: 2px solid rgba(21, 21, 21, 0.5); 
+    width: 6.4rem;
+    height: 6.4rem;
     border-radius: 50%;
+    border: 2px solid rgba(25, 25, 25, 0.7);  
     background-color: rgba(21, 21, 21, 0.4);
     backdrop-filter: blur(4px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.75);
     cursor: pointer;
+    transform: translateY(2%);
+    transition: all .2s;
 
     /* position */
     position: fixed;
     bottom: 50px;
     right: 50px;
+}
+button.toTheTop:hover{
+    transform: translateY(-2%);
+    border: 2px solid rgba(44, 44, 44, 0.5);  
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.75);
 }
 button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
 
@@ -111,7 +117,7 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30rem 0 30rem 0;
+    padding: 10rem 0 30rem 0;
 }
 .set01_content_le{
     width: 66%; 
@@ -213,12 +219,12 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
 
 /* 섹션 세번째 */
 /* 섹션 세번째 : 디자인 시스템 1번 */
-.design_sys_01 > p{padding-left: 2%}
+.design_sys_01 > p{margin-bottom: 2rem; padding-left: 2%}
 
 .design_sys_01 .main_sys_keyword{
     border: 2px solid #555555; 
     border-radius: 12px; 
-    margin: 1.2rem auto; 
+    margin: 0 auto; 
     text-align: center; 
     padding: 15rem 8.5rem;
 }
@@ -226,6 +232,7 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
 
 /* 섹션 세번째 : 디자인 시스템 2번 */
 .design_sys_02{margin: 6rem 0 10rem 0; padding: 0 8.5rem;}
+.design_sys_02 .sys_title{margin: 2rem auto; }
 .design_sys_02 .sys_title p{margin: 0px !important;}
 
 .design_sys_02 .content_group02 article{position: relative;}
