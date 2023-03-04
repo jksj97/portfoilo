@@ -28,7 +28,7 @@ button{border: none; background-color:#151515; cursor: pointer; margin: 2px 0;}
 /* header */
 header{
     width: 100%;
-    height: 46px;
+    height: 3.5rem;
     background-color: #555555;
     margin: auto;
     position: fixed;
@@ -271,22 +271,22 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
 
 .font_sys > .noto > h1,
 .font_sys > .roboto > h1{
-    transform: translateY(-50%);
+    transform: translateY(-80%);
     opacity: 0;
-    transition: all ease-in .3s;
+    transition: all ease-in 1s;
 }
 .font_sys > .noto > h1.active,
-.font_sys > .roboto > h1.active{transform: translateY(50%); opacity: 1;}
+.font_sys > .roboto > h1.active{transform: translateY(80%); opacity: 1;}
 
 .font_sys > .noto .noto_info,
 .font_sys > .roboto .roboto_info{
-    transform: translateX(-2%);
+    transform: translateX(-10%);
     opacity: 0;
-    transition: all ease-in .3s;
+    transition: all ease-in 1s;
 }
 .font_sys > .noto .noto_info.active,
-.font_sys > .roboto .roboto_info.active{transform: translateX(2%); opacity: 1;}
-.font_sys > .noto .noto_info{position: relative; top: 1.8rem; left: -7.5rem;}
+.font_sys > .roboto .roboto_info.active{transform: translateX(10%); opacity: 1;}
+.font_sys > .noto .noto_info{position: relative; top: 2.4rem; left: -8rem;}
 .font_sys > .noto .noto_info > p::after{
     content: "";
     width: 5rem;
@@ -301,7 +301,7 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
     top: 0; 
     left: -8rem;
 }
-.font_sys > .roboto .roboto_info{position: relative; top: 1.3rem; left: 4.5rem;}
+.font_sys > .roboto .roboto_info{position: relative; top: 2rem; left: 0;}
 
 /* footer */
 footer{width: 100%; height: 10rem;}

@@ -59,9 +59,9 @@
     /* design system part 03 */
     .design_sys_03, .design_sys_04{padding: 2rem;}
 
-    .font_sys > .noto .noto_info{top: 3rem; left: -12rem;}
-    .font_sys > .roboto > h1{left: -10rem;}
-    .font_sys > .roboto .roboto_info{top: 2.5rem; left: 10rem;}
+    .font_sys > .noto .noto_info{top: 3.4rem; left: -12rem;}
+    .font_sys > .roboto > h1{left: -6rem;}
+    .font_sys > .roboto .roboto_info{top: 3rem; left: 6rem;}
 
     footer{height: 20rem;}
 }
