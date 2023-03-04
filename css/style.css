@@ -45,9 +45,35 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.head_inner a, .head_inner .mainMenu li a{font-size: 0.8rem !important;}
 .mainMenu li{float: left; margin-left: 1rem;}
- 
+.head_inner a, .head_inner .mainMenu li a{
+    position: relative !important;
+    display: block;
+    font-size: 0.8rem !important; 
+    /* text-transform: uppercase;  */
+    transition: 0.5s;
+}
+.mainMenu li a::after{
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.mainMenu li a:hover::after{transform: scaleX(1); transform-origin: left;}
+
+/* Scroll Menu */
+/* .mainMenu li.on a.mainMenu_01{background-position: -200px 0;}
+.mainMenu li.on a.mainMenu_02{background-position: -800px 0;}
+.mainMenu li.on a.mainMenu_03{background-position: -1000px -800px;}  */
+
+
+
 /* to top btn : 맨위로*/
 button.toTheTop{
     z-index: 101;
@@ -75,7 +101,6 @@ button.toTheTop a#topbtn{font-weight: 700; padding: 25%;}
     border-radius: 6px;
     box-shadow: 0 4px 4px rgba(21, 21, 21, 0.75);
 }
-
 
 
 /* 섹션 첫번째 */
